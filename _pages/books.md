@@ -1,8 +1,9 @@
 ---
 title: "Books"
 layout: collection
-permalink: /Books/
+permalink: /books/
 collection: books
+entries_layout: grid
 sort_by: date_read
 sort_order: reverse
 ---
