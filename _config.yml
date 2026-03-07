@@ -54,6 +54,9 @@ plugins:
   - jemoji
   - jekyll-include-cache
 
+atom_feed:
+  hide: true
+
 author:
   name   : "Ben Bryant"
   avatar : "/assets/images/profile.jpg"
@@ -85,7 +88,7 @@ footer:
 
 # Collections
 collections:
-  books:
+  reading:
     output: true
     permalink: /:collection/:path/
 
@@ -109,12 +112,12 @@ defaults:
       layout: single
       author_profile: true
 
-  # _books
+  # _reading
   - scope:
       path: ""
-      type: books
+      type: reading
     values:
-      layout: single
+      layout: book
       author_profile: true
 
 #category_archive:

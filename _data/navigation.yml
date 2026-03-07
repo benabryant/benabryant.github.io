@@ -1,7 +1,9 @@
 main:
-  - title: "Books"
-    url: /books/
-  - title: "Portfolio"
-    url: /portfolio/
   - title: "About"
     url: /about/
+  - title: "Experience"
+    url: /experience/
+  - title: "Portfolio"
+    url: /portfolio/
+  - title: "Reading"
+    url: /reading/
