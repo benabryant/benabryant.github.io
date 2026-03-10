@@ -1,6 +1,7 @@
 import Sidebar from './components/Sidebar'
 import About from './components/About'
 import HeaderImage from './components/HeaderImage'
+import Experience from './components/Experience'
 import './App.css'
 
 export default function App() {
@@ -10,6 +11,7 @@ export default function App() {
       <main className="main">
         <HeaderImage/>
         <About />
+        <Experience />
       </main>
     </div>
   )

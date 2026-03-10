@@ -58,11 +58,6 @@
   border-top: 1.5px solid var(--border);
 }
 
-.sidebar__contact a {
-  font-size: 0.85rem;
-  color: var(--text-muted);
-}
-
 .sidebar__contact a:hover {
   color: var(--primary);
   opacity: 1;
@@ -100,3 +95,20 @@
     display: none;
   }
 }
+
+.sidebar__theme-toggle {
+  margin-top: auto;
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  color: var(--text-muted);
+  cursor: pointer;
+  font-family: var(--font-1);
+  font-size: 0.85rem;
+  padding: 0.5rem 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: color var(--transition), border-color var(--transition);
+}
+.sidebar__theme-toggle:hover { color: var(--text); border-color: var(--primary); }

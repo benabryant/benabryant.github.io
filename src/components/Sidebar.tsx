@@ -1,3 +1,4 @@
+import { useTheme } from '../hooks/UseTheme'
 import './Sidebar.css'
 
 interface ContactLink {
@@ -15,6 +16,8 @@ const CONTACT_LINKS: ContactLink[] = [
 ]
 
 export default function Sidebar() {
+  const { dark, toggle } = useTheme()
+
   return (
     <aside className="sidebar">
       <img className="sidebar__photo" src="/profile.jpg" alt="Ben Bryant" />
@@ -24,6 +27,7 @@ export default function Sidebar() {
       </p>
       <nav className="sidebar__nav">
         <a href="#about">About</a>
+        <a href="#experience">Experience</a>
       </nav>
 
       <div className="sidebar__contact">
@@ -37,6 +41,11 @@ export default function Sidebar() {
           </a>
         ))}
       </div>
+
+      <button className="sidebar__theme-toggle" onClick={toggle} aria-label="Toggle dark mode">
+        <i className={dark ? 'fa-solid fa-sun' : 'fa-solid fa-moon'} />
+        {dark ? 'Light mode' : 'Dark mode'}
+      </button>
     </aside>
   )
 }

@@ -1,27 +1,38 @@
 /* ─── Design Tokens ─────────────────────────────────────── */
 :root {
-  --bg:           #f0f4f7; /* main background */
-  --bg-subtle:    #b1d0ea; /* secondary background */
+  --bg:           #f0f4f7;
+  --bg-subtle:    #b1d0ea;
   --border:       #c2d0db;
-  --primary:      #3a507d; /* accent 1 */
-  --primary-dark: #2c3e5f; /* accent 2 */
+  --primary:      #3a507d;
+  --primary-dark: #2c3e5f;
   --text:         #1a232e;
-  --text-muted:   #5a6270;
+  --text-muted:   #464e5c;
 
   --font-1:      'DM Sans', sans-serif;
   --font-2:      'Lora', Georgia, serif;
 
-  --section-pad: clamp(4rem, 10vw, 4rem); /* responsive vertical padding */
-  --max-width:   860px;                   /* maximum content width */
-  --radius:      12px;                    /* border for cards and buttons */
-  --transition:  0.3s ease;              /* hover effects */
+  --section-pad: clamp(4rem, 10vw, 4rem);
+  --max-width:   880px;
+  --radius:      12px;
+  --transition:  0.3s ease;
 
   --sidebar-width: 280px;
 }
 
+/* ─── Dark Mode Tokens ───────────────────────────────────── */
+[data-theme="dark"] {
+  --bg:           #0f151c;
+  --bg-subtle:    #161f2a;
+  --border:       #253040;
+  --primary:      #6a96d4;
+  --primary-dark: #4f78b0;
+  --text:         #e4ecf4;
+  --text-muted:   #94a9c0;
+}
+
 /* ─── Reset ──────────────────────────────────────────────── */
 *, *::before, *::after {
-  box-sizing: border-box; /* width/height includes padding and border */
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -33,11 +44,12 @@ body {
   background-color: var(--bg);
   color: var(--text);
   font-family: var(--font-1);
-  font-weight: 300;    /* lighter than browser default (400) */
-  line-height: 1.75;   /* more generous than browser default (~1.2) */
+  font-weight: 300;
+  line-height: 1.75;
+  transition: background-color var(--transition), color var(--transition);
 }
 
-img { display: block; max-width: 100%; } /* prevents overflow, removes inline gap */
+img { display: block; max-width: 100%; }
 
 a {
   color: var(--primary);
@@ -67,6 +79,6 @@ a:hover { opacity: 0.75; }
 
 h2 {
   font-family: var(--font-2);
-  font-size: clamp(1.6rem, 3vw, 2.2rem); /* fluid scaling between mobile and desktop */
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
   margin-bottom: 2rem;
 }
