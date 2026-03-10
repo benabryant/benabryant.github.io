@@ -7,7 +7,7 @@ export default function Footer() {
         <p className="footer_text">
           © {new Date().getFullYear()} Ben Bryant. Built with Vite and React.
         </p>
-        <a href="#about" className="footer__back">
+        <a href="#top" className="footer__back">
           Back to top ↑
         </a>
       </div>

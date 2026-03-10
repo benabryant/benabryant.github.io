@@ -9,7 +9,7 @@ interface ContactLink {
 }
 
 const CONTACT_LINKS: ContactLink[] = [
-  { href: 'mailto:you@email.com',                   icon: 'fa-solid fa-envelope',   label: 'Email' },
+  { href: 'mailto:me@benabryant.com',                   icon: 'fa-solid fa-envelope',   label: 'Email' },
   { href: 'https://github.com/benabryant',          icon: 'fa-brands fa-github',    label: 'GitHub',   external: true },
   { href: 'https://linkedin.com/in/benjaminabryant',icon: 'fa-brands fa-linkedin',  label: 'LinkedIn', external: true },
   { href: 'https://www.instagram.com/ben.abryant/', icon: 'fa-brands fa-instagram',  label: 'Instagram',   external: true },
