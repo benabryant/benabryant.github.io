@@ -6,6 +6,7 @@ export interface Project {
   tags: string[]
   github?: string
   demo?: string
+  image?: string
   featured: boolean
 }
 
@@ -19,17 +20,19 @@ export const PROJECTS: Project[] = [
     tags: ['React', 'TypeScript', 'Vite', 'CSS', 'GitHub Pages'],
     github: 'https://github.com/benabryant/benabryant.github.io',
     demo: 'https://benabryant.com',
+    image: '/projects/personal-site.png',
     featured: true,
   },
   {
     id: 'solar',
     title: 'Solar Panel Controller',
-    tagline: 'Toy prototype for a solar panel controller',
+    tagline: 'Prototype for a solar panel controller',
     description:
-      "A prototype for a solar panel controller built with an ESP32 microcontroller. It uses a light sensor to track the sun and a servo motor to adjust the panel's angle for optimal energy absorption.",
-    tags: ['ESP32', 'C++', 'Arduino', 'IoT'],
+      "A toy prototype for a solar panel controller built with an ESP32 microcontroller. A user can manually rotate it with a remote or trigger automatic rotation. It uses a light sensor to track the sun and a servo motor to adjust the panel's angle for optimal energy absorption.",
+    tags: ['ESP32', 'C++', 'FreeRTOS', 'Arduino', 'IoT', 'I2C'],
     github: 'https://github.com/benabryant/DynamicSolar',
     /*TODO: demo: 'https://benabryant.com',*/
+    image: '/projects/solar.png',
     featured: true,
   },
 ]
