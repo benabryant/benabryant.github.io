@@ -6,6 +6,7 @@ export interface Project {
   tags: string[]
   github?: string
   demo?: string
+  demoVideo?: string
   image?: string
   featured: boolean
 }
@@ -21,7 +22,7 @@ export const PROJECTS: Project[] = [
     github: 'https://github.com/benabryant/benabryant.github.io',
     demo: 'https://benabryant.com',
     image: '/projects/personal-site.png',
-    featured: true,
+    featured: false,
   },
   {
     id: 'solar',
@@ -31,8 +32,18 @@ export const PROJECTS: Project[] = [
       "A toy prototype for a solar panel controller built with an ESP32 microcontroller. A user can manually rotate it with a remote or trigger automatic rotation. It uses a light sensor to track the sun and a servo motor to adjust the panel's angle for optimal energy absorption.",
     tags: ['ESP32', 'C++', 'FreeRTOS', 'Arduino', 'IoT', 'I2C'],
     github: 'https://github.com/benabryant/DynamicSolar',
-    /*TODO: demo: 'https://benabryant.com',*/
+    demoVideo: 'https://youtu.be/CnEbaP5an1E',
     image: '/projects/solar.png',
     featured: true,
   },
+  {
+    id: 'os',
+    title: 'Operating System',
+    tagline: 'A simple operating system kernel',
+    description:
+      "Built off of MIT\'s educational xk kernel on emulated hardware using QEMU. Implemented process management(pipe, fork, exec), virtual memory, and a crash-safe filesystem. I can share the code but don't want to post it publicly for academic integrity reasons.",
+    tags: ['C', 'x86', 'Assembly', 'OS', 'UNIX'],
+    image: '/projects/os.png',
+    featured: true,
+  }
 ]
