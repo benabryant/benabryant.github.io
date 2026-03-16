@@ -22,7 +22,7 @@ export const PROJECTS: Project[] = [
     github: 'https://github.com/benabryant/benabryant.github.io',
     demo: 'https://benabryant.com',
     image: '/projects/personal-site.png',
-    featured: false,
+    featured: true,
   },
   {
     id: 'solar',
@@ -32,7 +32,7 @@ export const PROJECTS: Project[] = [
       "A toy prototype for a solar panel controller built with an ESP32 microcontroller. A user can manually rotate it with a remote or trigger automatic rotation. It uses a light sensor to track the sun and a servo motor to adjust the panel's angle for optimal energy absorption.",
     tags: ['ESP32', 'C++', 'FreeRTOS', 'Arduino', 'IoT', 'I2C'],
     github: 'https://github.com/benabryant/DynamicSolar',
-    demoVideo: 'https://youtu.be/CnEbaP5an1E',
+    demoVideo: 'https://youtu.be/KDYpYbTJ_gQ',
     image: '/projects/solar.png',
     featured: true,
   },
@@ -51,7 +51,7 @@ export const PROJECTS: Project[] = [
     title: 'Snake Game',
     tagline: 'A simple implementation of the classic Snake game',
     description: 
-      "A simple implementation of Snake bult with Verilog to be run on an DE1-SoC FPGA",
+      "A simple implementation of Snake bult with Verilog to be run on an DE1-SoC FPGA. Notable features include random apple generation and variaable game speed. The game is configured for an external LED but modifiable",
     tags: ['Verilog', 'FPGA', 'Hardware Design'],
     github: 'https://github.com/benabryant/snake',
     image: '/projects/snake.png',

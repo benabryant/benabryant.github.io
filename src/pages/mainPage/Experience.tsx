@@ -34,7 +34,7 @@ const EDU_ITEMS: ExpItemProps[] = [
 const WORK_ITEMS: ExpItemProps[] = [
   { title: "Beach Manager", org: "Windermere Corporation", date: "May - Sep 2023", description: "Coordinated a team of 15 lifeguards" },
   { title: "Lifeguard", org: "Windermere Corporation", date: "Jun - Sep 2022", description: "Responsible for patron safety" },
-  { title: "Classified Tutor", org: "Seattle Public Schools", date: "Jun - Sep 2021", description: "Educated groups of 5-15 students in mathematics" }
+  { title: "Classified Tutor", org: "Seattle Public Schools", date: "Jun - Sep 2021", description: "Educated groups of 5-15 students" }
 ]
 interface ExpItemProps {
   title: string
