@@ -1,0 +1,37 @@
+.games-page {
+  flex: 1;
+  padding: var(--section-pad) 1.5rem;
+}
+
+.games-page__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.25rem;
+}
+
+.games-page__card {
+  display:        flex;
+  flex-direction: column;
+  align-items:    flex-start;
+  gap:            0.4rem;
+  padding:        1.25rem;
+  text-align:     left;
+  width:          100%;
+}
+
+.games-page__title {
+  font-weight: var(--heavy);
+  font-size:   1rem;
+  color:       var(--text);
+}
+
+.games-page__desc {
+  font-size: var(--sm);
+  color:     var(--text-muted);
+}
+
+.games-page__players {
+  font-size:   var(--xs);
+  color:       var(--primary);
+  margin-top:  0.25rem;
+}

@@ -1,0 +1,65 @@
+.game-shell {
+  flex: 1;
+  display:         flex;
+  justify-content: center;
+  align-items:     center;
+  padding:         var(--section-pad);
+}
+
+.game-shell__lobby {
+  display:        flex;
+  flex-direction: column;
+  align-items:    center;
+  gap:            1.5rem;
+  text-align:     center;
+  max-width:      400px;
+}
+
+.game-shell__subtitle {
+  color:     var(--text-muted);
+  font-size: var(--sm);
+  line-height: 1.6;
+}
+
+.game-shell__actions {
+  display:        flex;
+  flex-direction: column;
+  align-items:    center;
+  gap:            1rem;
+  width:          100%;
+}
+
+.game-shell__btn {
+  padding:   0.6rem 1.5rem;
+  font-size: var(--sm);
+  width:     100%;
+}
+
+.game-shell__join {
+  display: flex;
+  gap:     0.5rem;
+  width:   100%;
+}
+
+.game-shell__input {
+  flex:          1;
+  background:    var(--bg-subtle);
+  border:        1.5px solid var(--border);
+  border-radius: var(--radius);
+  color:         var(--text);
+  font-family:   var(--font-1);
+  font-size:     var(--sm);
+  padding:       0.5rem 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  outline: none;
+  transition: border-color var(--transition);
+}
+
+.game-shell__input:focus  { border-color: var(--primary); }
+
+.game-shell__input::placeholder {
+  color:          var(--text-muted);
+  text-transform: none;
+  letter-spacing: normal;
+}

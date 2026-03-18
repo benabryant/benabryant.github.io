@@ -1,0 +1,86 @@
+.ttt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+.ttt__header {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  color: var(--text-muted);
+  font-size: var(--sm);
+}
+
+.ttt__room code {
+  color: var(--primary);
+  font-size: var(--sm);
+}
+
+.ttt__symbol {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.ttt__mark {
+  font-weight: var(--heavy);
+  font-size: 1.1rem;
+}
+
+.ttt__mark--X { color: var(--primary); }
+.ttt__mark--O { color: var(--text-muted); }
+
+.ttt__status {
+  font-size: var(--sm);
+  color: var(--text-muted);
+  transition: color var(--transition);
+}
+
+.ttt__status--active {
+  color: var(--primary);
+  font-weight: var(--heavy);
+}
+
+.ttt__error {
+  color: #c0392b;
+  font-size: var(--sm);
+}
+
+.ttt__board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows:    repeat(3, 100px);
+  gap: 8px;
+}
+
+.ttt__cell {
+  background:    var(--bg-subtle);
+  border:        1.5px solid var(--border);
+  border-radius: var(--radius);
+  color:         var(--text);
+  cursor:        pointer;
+  font-family:   var(--font-2);
+  font-size:     2.5rem;
+  transition:    background-color var(--transition), border-color var(--transition);
+}
+
+.ttt__cell:hover:not(:disabled) {
+  background-color: var(--bg);
+  border-color:     var(--primary);
+}
+
+.ttt__cell:disabled {
+  cursor: default;
+}
+
+.ttt__cell--X { color: var(--primary); }
+.ttt__cell--O { color: var(--text-muted); }
+
+.ttt__rematch {
+  margin-top: 0.5rem;
+  padding: 0.6rem 1.5rem;
+  font-size: var(--sm);
+}

@@ -1,11 +1,12 @@
 import { Link, NavLink } from 'react-router-dom'
-import { useTheme } from '../hooks/UseTheme'
+import { useTheme } from '../hooks/useTheme'
 import { FaSun, FaMoon } from 'react-icons/fa'
 import './PageHeader.css'
 
 const NAV_LINKS = [
   { to: '/',         label: 'Home'     },
   { to: '/projects', label: 'Projects' },
+  { to: '/games',    label: 'Games'    },
 ]
 
 export default function PageHeader() {
