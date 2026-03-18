@@ -3,7 +3,7 @@ import { io, Socket } from "socket.io-client"
 
 const SERVER = import.meta.env.DEV
   ? "http://localhost:8000"
-  : "https://your-render-url.onrender.com"
+  : "https://games-0lha.onrender.com"
 
 export interface GameState {
   board:     (string | null)[]
